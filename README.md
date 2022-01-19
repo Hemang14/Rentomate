@@ -29,6 +29,7 @@ $ git clone https://github.com/Appii00/Flutter-Bloc-MovieDB-App.git
 $ cd Flutter-Bloc-MovieDB-App
 ```
 
+
 ### Install dependencies
 
 ```bash
