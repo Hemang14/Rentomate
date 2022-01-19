@@ -6,4 +6,4 @@ A property listings app built using Flutter sdk.
 
 ## Screenshots
 
-<img height="480px" src="screenshots/1.jpg"> <img height="480px" src="screenshots/2.jpg"> <img height="480px" src="screenshots/3.jpg"> <img height="480px" src="screenshots/4.jpg"> <img height="480px" src="screenshots/5.jpg">
+<img height="480px" src="screenshots/1.png"> <img height="480px" src="screenshots/2.png"> <img height="480px" src="screenshots/3.png"> <img height="480px" src="screenshots/4.png"> <img height="480px" src="screenshots/5.png">
