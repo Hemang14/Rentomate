@@ -20,13 +20,13 @@ A Fully functional **Tenant Finder app** written in flutter and dart using Fireb
 ### Clone this repository
 
 ```bash
-$ git clone https://github.com/Appii00/Flutter-Bloc-MovieDB-App.git
+$ git clone https://github.com/Hemang14/Rentomate-App.git
 ```
 
 ### Go into the repository
 
 ```bash
-$ cd Flutter-Bloc-MovieDB-App
+$ cd Rentomate-App
 ```
 
 
