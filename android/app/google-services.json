@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "161238456972",
+    "project_id": "tenant-finder-49047",
+    "storage_bucket": "tenant-finder-49047.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161238456972:android:e590c4f751f24fcf69f9a9",
+        "android_client_info": {
+          "package_name": "com.example.rentomate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161238456972-uun718sr8vf9md2t0vupekv9fjb0l65i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8dclh0HsSuBjXZzcC1MBiycPRfs0RFlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161238456972-uun718sr8vf9md2t0vupekv9fjb0l65i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161238456972:android:23523af723f735e569f9a9",
+        "android_client_info": {
+          "package_name": "com.example.first_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161238456972-uun718sr8vf9md2t0vupekv9fjb0l65i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8dclh0HsSuBjXZzcC1MBiycPRfs0RFlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161238456972-uun718sr8vf9md2t0vupekv9fjb0l65i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
