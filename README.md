@@ -1,8 +1,6 @@
 # **Rentomate**
 
-## Tenant Finder App
-
-A Fully functional Tenant Finder app written in flutter and dart using Firebase as backend.
+A Fully functional **Tenant Finder app** written in flutter and dart using Firebase as backend.
 
 ## **Demo**
 
@@ -15,5 +13,30 @@ A Fully functional Tenant Finder app written in flutter and dart using Firebase 
 
 ## Screenshots
 <hr/>
-
+<p align="center">
 <img width="30%" src="Screenshots/1.png"> <img width="30%" src="Screenshots/2.png"> <img width="30%" src="Screenshots/3.png"> <br> <img width="30%" src="Screenshots/4.png"> <img width="30%" src="Screenshots/5.png">
+</p>
+
+### Clone this repository
+
+```bash
+$ git clone https://github.com/Appii00/Flutter-Bloc-MovieDB-App.git
+```
+
+### Go into the repository
+
+```bash
+$ cd Flutter-Bloc-MovieDB-App
+```
+
+### Install dependencies
+
+```bash
+$ flutter packages get
+```
+
+### Run the app
+
+```bash
+$ flutter run
+```
