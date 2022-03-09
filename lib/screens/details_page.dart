@@ -7,7 +7,7 @@ import 'package:rentomate/model/user_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class DetailsPage extends StatefulWidget {
-  final String cost;
+  final String hcost;
   final String hname;
   final String Oname;
   // final String looking;
@@ -15,7 +15,7 @@ class DetailsPage extends StatefulWidget {
   // final String location;
   DetailsPage({
     Key? key,
-    required this.cost,
+    required this.hcost,
     required this.hname,
     required this.Oname,
     // required this.looking,
@@ -31,10 +31,10 @@ class _DetailsPageState extends State<DetailsPage> {
   // String ownerName = "Krishna Gowda";
   final hostelList = [
     House('Hari Pg', '8th Cross, Banashankari Stage-1',
-        'assets/images/house03.jpeg'),
+        'assets/images/house03.jpeg','₹12,000','Mr. Krishna Reddy'),
     House(
-        'Aloha Pg', '2nd Cross, Hanumanth nagar', 'assets/images/house07.jpeg'),
-    House('Ram Nivas', '3rd Cross, Banashankari', 'assets/images/house05.jpeg'),
+        'Aloha Pg', '2nd Cross, Hanumanth nagar', 'assets/images/house07.jpeg','₹15,000','Mr. Harsh Chopra'),
+    House('Ram Nivas', '3rd Cross, Banashankari', 'assets/images/house05.jpeg','₹20,000','Mr. Ravi Chandra'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class _DetailsPageState extends State<DetailsPage> {
               height: screenHeight * 0.4,
             ),
             buildOption(
-                "${widget.cost}", "${widget.hname}", "${widget.Oname}", context)
+                "${widget.hcost}", "${widget.hname}", "${widget.Oname}", context)
           ],
         ));
   }
@@ -77,7 +77,7 @@ class MapUtils {
 }
 
 Widget buildOption(
-    String cost, String hname, String Oname, BuildContext context) {
+    String hcost, String hname, String Oname, BuildContext context) {
   return SingleChildScrollView(
       child: Container(
     margin: EdgeInsets.only(top: 250),
@@ -96,7 +96,7 @@ Widget buildOption(
                     // "\₹12,000/month",
                     // "\₹9,500/month",
                     // "\₹13,500/month",
-                    cost,
+                    hcost,
                     style: TextStyle(
                       color: Colors.purple,
                       fontSize: 30.0,

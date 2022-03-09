@@ -60,7 +60,7 @@ Widget buildOption(String house, String location, String cost, String images,
     onTap: () {
       var route = new MaterialPageRoute(
         builder: (BuildContext context) => new DetailsPage(
-          cost: priceString,
+          hcost: priceString,
           hname: housename,
           Oname: OwnerName,
           // looking: lookingfor,

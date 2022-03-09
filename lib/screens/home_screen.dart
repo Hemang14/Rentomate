@@ -11,6 +11,11 @@ import 'package:flutter/material.dart';
 import 'package:rentomate/screens/details_page.dart';
 import 'package:rentomate/screens/searchLists.dart';
 import 'package:rentomate/constants.dart';
+import 'package:rentomate/screens/profile_page.dart';
+import 'package:rentomate/utils/user_preferences.dart';
+import 'package:animated_theme_switcher/animated_theme_switcher.dart';
+import 'package:rentomate/themes.dart';
+
 
 import 'login_screen.dart';
 
@@ -274,20 +279,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: <Widget>[
                     homeWidget(0),
                     homeWidget(1),
-                    homeWidget(0),
-                    homeWidget(1),
-                    homeWidget(0),
-                    homeWidget(1),
-                    homeWidget(0),
-                    homeWidget(1),
-                    homeWidget(0),
-                    homeWidget(1),
-                    homeWidget(0),
-                    homeWidget(1),
-                    homeWidget(0),
-                    homeWidget(1),
-                    homeWidget(0),
-                    homeWidget(1),
+                    homeWidget(2),
+                    homeWidget(3),
+                    homeWidget(4),
+                    homeWidget(5),
+                    homeWidget(6),
+                    homeWidget(7),
+                    homeWidget(8),
+                    homeWidget(9),
+                    homeWidget(10),
+                    homeWidget(11),
+                    homeWidget(12),
+                    homeWidget(13),
+                    homeWidget(14),
                   ],
                 ),
               ),
@@ -316,20 +320,20 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: <Widget>[
                       bestOfferWidget(0),
                       bestOfferWidget(1),
-                      bestOfferWidget(0),
-                      bestOfferWidget(1),
-                      bestOfferWidget(0),
-                      bestOfferWidget(1),
-                      bestOfferWidget(0),
-                      bestOfferWidget(1),
-                      bestOfferWidget(0),
-                      bestOfferWidget(1),
-                      bestOfferWidget(0),
-                      bestOfferWidget(1),
-                      bestOfferWidget(0),
-                      bestOfferWidget(1),
-                      bestOfferWidget(0),
-                      bestOfferWidget(1),
+                      bestOfferWidget(2),
+                      bestOfferWidget(3),
+                      bestOfferWidget(4),
+                      bestOfferWidget(5),
+                      bestOfferWidget(6),
+                      bestOfferWidget(7),
+                      bestOfferWidget(8),
+                      bestOfferWidget(9),
+                      bestOfferWidget(10),
+                      bestOfferWidget(11),
+                      bestOfferWidget(12),
+                      bestOfferWidget(13),
+                      bestOfferWidget(14),
+                      // bestOfferWidget(15),
                     ],
                   )),
             ],
@@ -398,18 +402,18 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget homeWidget(ind) {
-    var priceString = "₹12,000";
-    var housename = "Ram Pg";
+    var priceString = recommendedList[ind].cost;
+    var housename = recommendedList[ind].name;
     var lookingfor;
     var document;
     var place;
-    var OwnerName = "Mr. Krishna Reddy";
+    var OwnerName = recommendedList[ind].ownname;
     return InkWell(
         onTap: () {
           Navigator.of(context)
               .push(MaterialPageRoute(builder: (BuildContext context) {
             return DetailsPage(
-              cost: priceString,
+              hcost: priceString,
               hname: housename,
               Oname: OwnerName,
               // looking: lookingfor,
@@ -452,7 +456,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Positioned(
                 bottom: 40,
-                right: 60,
+                right: 22,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -481,19 +485,19 @@ class _HomeScreenState extends State<HomeScreen> {
 
 // for best offers
   Widget bestOfferWidget(ind) {
-    var priceString = "₹12,000";
-    var housename = "Hari Pg";
+    var priceString = recommendedList[ind].cost;
+    var housename = recommendedList[ind].name;
     var lookingfor;
     var document;
     var place;
-    var OwnerName = "Mr. Krishna Reddy";
+    var OwnerName = recommendedList[ind].ownname;
 
     return InkWell(
         onTap: () {
           Navigator.of(context)
               .push(MaterialPageRoute(builder: (BuildContext context) {
             return DetailsPage(
-              cost: priceString,
+              hcost: priceString,
               hname: housename,
               Oname: OwnerName,
               // looking: lookingfor,
@@ -536,7 +540,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Positioned(
                 bottom: 40,
-                right: 60,
+                right: 22,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -608,7 +612,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ListTile(
             leading: Icon(Icons.verified_user),
             title: Text('Profile'),
-            onTap: () => {Navigator.of(context).pop()},
+            // onTap: () => {Navigator.of(context).pop()},
+            onTap: () {
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => ProfilePage()),
+              );
+            },
           ),
           ListTile(
             leading: Icon(Icons.settings),
